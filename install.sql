@@ -7,3 +7,4 @@ grant usage on schema rwutl to public;
 
 \ir utl/idgen.sql
 \ir i18n/i18n.sql
+\ir utl/randbigint.sql
