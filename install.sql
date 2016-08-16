@@ -13,6 +13,7 @@ grant usage on schema i18n to public;
 set schema 'utl';
 \ir utl/idgen.sql
 \ir utl/randbigint.sql
+\ir utl/dual.sql
 
 set schema 'cfg';
 \ir cfg/cfg.sql

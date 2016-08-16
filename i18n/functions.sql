@@ -25,6 +25,6 @@ as $body$
     from i18n_translation
     where namespace = 'PUBLIC'
       and identifier = iID
-      and language_id = cfg.getText('default.language');
+      and language_id = cfg.getText('default.language', 'en');
 $body$;
 
