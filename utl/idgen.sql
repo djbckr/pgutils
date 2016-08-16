@@ -30,7 +30,7 @@ returns numeric(24)
 language sql
 security definer
 as $body$
-select (to_char(clock_timestamp() at time zone 'UTC', 'YYYYMMDDHH24MISSUS')||to_char(nextval('rwutl.idloop'), 'FM0009'))::numeric(24);
+select (to_char(clock_timestamp() at time zone 'UTC', 'YYYYMMDDHH24MISSUS')||to_char(nextval('utl.idloop'), 'FM0009'))::numeric(24);
 $body$;
 
 grant execute on function make_id() to public;

@@ -14,10 +14,10 @@ create table country (
   constraint uq_country_native_name unique (native_name)
 );
 
-create or replace view public.countries as
-select * from rwutl.country;
+create or replace view countries as
+select * from country;
 
-grant select on public.countries to public;
+grant select on countries to public;
 
 create table currency (
   currency_id      text,
@@ -29,10 +29,10 @@ create table currency (
   constraint pk_currency primary key (currency_id)
 );
 
-create or replace view public.currencies as
-select * from rwutl.currency;
+create or replace view currencies as
+select * from currency;
 
-grant select on public.currencies to public;
+grant select on currencies to public;
 
 create table language (
   language_id      text,
@@ -42,10 +42,10 @@ create table language (
   constraint pk_language primary key (language_id)
 );
 
-create or replace view public.languages as
-select * from rwutl.language;
+create or replace view languages as
+select * from language;
 
-grant select on public.languages to public;
+grant select on languages to public;
 
 create table country_language (
   country_id       text,
@@ -55,7 +55,7 @@ create table country_language (
   constraint fk_country_language_2_language foreign key (language_id) references language (language_id)
 );
 
-create or replace view public.country_languages as
+create or replace view country_languages as
 select co.country_id, co.name country_name, co.native_name country_native_name,
        la.language_id, la.name language_name, la.native_name language_native_name
   from country_language cl
@@ -64,7 +64,7 @@ select co.country_id, co.name country_name, co.native_name country_native_name,
   join language la
     on la.language_id = cl.language_id;
 
-grant select on public.country_languages to public;
+grant select on country_languages to public;
 
 create table country_currency (
   country_id       text,
@@ -74,7 +74,7 @@ create table country_currency (
   constraint fk_cntrycncy_2_currency foreign key (currency_id) references currency (currency_id)
 );
 
-create or replace view public.country_currencies as
+create or replace view country_currencies as
 select co.country_id, co.name country_name, co.native_name country_native_name,
        cu.currency_id, cu.name currency_name, cu.symbol currency_symbol, cu.frac_name, cu.frac_amt
   from country_currency cc
@@ -83,7 +83,7 @@ select co.country_id, co.name country_name, co.native_name country_native_name,
   join currency cu
     on cu.currency_id = cc.currency_id;
 
-grant select on public.country_currencies to public;
+grant select on country_currencies to public;
 
 create table i18n_translation (
   namespace   text,
@@ -94,9 +94,9 @@ create table i18n_translation (
   constraint fk_i18n_2_language foreign key (language_id) references language (language_id)
 );
 
-create or replace view public.i18n_translations as
-select * from rwutl.i18n_translation;
+create or replace view i18n_translations as
+select * from i18n_translation;
 
-grant select on public.i18n_translations to public;
+grant select on i18n_translations to public;
 
 \ir i18n_data.sql

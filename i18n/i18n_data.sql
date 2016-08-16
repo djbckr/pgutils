@@ -1595,663 +1595,758 @@ select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number()
        'PUBLIC',
        'en',
        dows
-  from unnest(array['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']) as dows;
+  from unnest(array['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'ab',
        dows
-  from unnest(array['Ашәахь','Аҩаш','Ахаш','Аҧшьаш','Ахәаш','Асабш','Амҽыш']) as dows;
+  from unnest(array['Ашәахь','Аҩаш','Ахаш','Аҧшьаш','Ахәаш','Асабш','Амҽыш']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'af',
        dows
-  from unnest(array['Maandag','Dinsdag','Woensdag','Donderdag','Vrydag','Saterdag','Sondag']) as dows;
+  from unnest(array['Maandag','Dinsdag','Woensdag','Donderdag','Vrydag','Saterdag','Sondag']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'sq',
        dows
-  from unnest(array['e hënë','e martë','e mërkurë','e enjte','e premte','e shtunë','e diel']) as dows;
+  from unnest(array['e hënë','e martë','e mërkurë','e enjte','e premte','e shtunë','e diel']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'am',
        dows
-  from unnest(array['ሰኞ','ማክሰኞ','ረቡዕ','ሐሙስ','ዓርብ','ቅዳሜ','እሑድ']) as dows;
+  from unnest(array['ሰኞ','ማክሰኞ','ረቡዕ','ሐሙስ','ዓርብ','ቅዳሜ','እሑድ']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'ar',
        dows
-  from unnest(array['يوم الإثنين','يوم الثلاثاء','يوم الأربعاء','يوم الخميس','يوم الجمعة','يوم السبت','يوم الأحد']) as dows;
+  from unnest(array['يوم الإثنين','يوم الثلاثاء','يوم الأربعاء','يوم الخميس','يوم الجمعة','يوم السبت','يوم الأحد']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'an',
        dows
-  from unnest(array['Luns','Martes','Miércols','Chuebes','Biernes','Sabado','Domingo']) as dows;
+  from unnest(array['Luns','Martes','Miércols','Chuebes','Biernes','Sabado','Domingo']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'hy',
        dows
-  from unnest(array['Երկուշաբթի','Երեքշաբթի','Չորեքշաբթի','Հինգշաբթի','Ուրբաթ','Շաբաթ','Կիրակի']) as dows;
+  from unnest(array['Երկուշաբթի','Երեքշաբթի','Չորեքշաբթի','Հինգշաբթի','Ուրբաթ','Շաբաթ','Կիրակի']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'az',
        dows
-  from unnest(array['Bazar ertəsi','Çərşənbə axşamı','Çərşənbə','Cümə axşamı','Cümə','Şənbə','Bazar']) as dows;
+  from unnest(array['Bazar ertəsi','Çərşənbə axşamı','Çərşənbə','Cümə axşamı','Cümə','Şənbə','Bazar']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'eu',
        dows
-  from unnest(array['astelehena','asteartea','asteazkena','osteguna','ostirala','larunbata','igandea']) as dows;
+  from unnest(array['astelehena','asteartea','asteazkena','osteguna','ostirala','larunbata','igandea']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'be',
        dows
-  from unnest(array['панядзелак','аўторак','серада','чацьвер','пятніца','сыбота','нядзеля']) as dows;
+  from unnest(array['панядзелак','аўторак','серада','чацьвер','пятніца','сыбота','нядзеля']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'bs',
        dows
-  from unnest(array['ponedeljak','utorak','srijeda','cxetvrtak','petak','subota','nedjelja']) as dows;
+  from unnest(array['ponedeljak','utorak','srijeda','cxetvrtak','petak','subota','nedjelja']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'br',
        dows
-  from unnest(array['dilun','dimeurz','dimerher','diriaou','digwener','disadorn','disul']) as dows;
+  from unnest(array['dilun','dimeurz','dimerher','diriaou','digwener','disadorn','disul']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'bg',
        dows
-  from unnest(array['понеделник','вторник','сряда','четвъртък','петък','събота','неделя']) as dows;
+  from unnest(array['понеделник','вторник','сряда','четвъртък','петък','събота','неделя']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'ca',
        dows
-  from unnest(array['dilluns','dimarts','dimecres','dijous','divendres','dissabte','diumenge']) as dows;
+  from unnest(array['dilluns','dimarts','dimecres','dijous','divendres','dissabte','diumenge']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'ce',
        dows
-  from unnest(array['Оршот','Шинара','Кхаара','Еара','П1ераска','Шот','К1иранде']) as dows;
+  from unnest(array['Оршот','Шинара','Кхаара','Еара','П1ераска','Шот','К1иранде']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'zh',
        dows
-  from unnest(array['星期一','星期二','星期三','星期四','星期五','星期六','星期日']) as dows;
+  from unnest(array['星期一','星期二','星期三','星期四','星期五','星期六','星期日']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'kw',
        dows
-  from unnest(array['dy'' Lun','dy'' Meurth','dy'' Mergher','dy'' Yow','dy'' Gwener','dy'' Sadorn','dy'' Sul']) as dows;
+  from unnest(array['dy'' Lun','dy'' Meurth','dy'' Mergher','dy'' Yow','dy'' Gwener','dy'' Sadorn','dy'' Sul']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'co',
        dows
-  from unnest(array['luni','marti','marcuri','ghjovi','venneri','sabbatu','dumenica']) as dows;
+  from unnest(array['luni','marti','marcuri','ghjovi','venneri','sabbatu','dumenica']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'hr',
        dows
-  from unnest(array['ponedjeljak','utorak','srijeda','četvrtak','petak','subota','nedjelja']) as dows;
+  from unnest(array['ponedjeljak','utorak','srijeda','četvrtak','petak','subota','nedjelja']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'cs',
        dows
-  from unnest(array['pondĕlí','úterý','středa','čtvrtek','pátek','sobota','nedĕle']) as dows;
+  from unnest(array['pondĕlí','úterý','středa','čtvrtek','pátek','sobota','nedĕle']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'da',
        dows
-  from unnest(array['mandag','tirsdag','onsdag','torsdag','fredag','lørdag','søndag']) as dows;
+  from unnest(array['mandag','tirsdag','onsdag','torsdag','fredag','lørdag','søndag']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'nl',
        dows
-  from unnest(array['maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag','zondag']) as dows;
+  from unnest(array['maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag','zondag']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'dz',
        dows
-  from unnest(array['གཟའ་མིག་དམར་','གཟའ་ལྷག་པ་','གཟའ་ཕུར་བུ་','གཟའ་པ་སངས་','གཟའ་སྤེན་པ་','གཟའ་ཉི་མ་','གཟའ་ཟླ་བ་']) as dows;
+  from unnest(array['གཟའ་མིག་དམར་','གཟའ་ལྷག་པ་','གཟའ་ཕུར་བུ་','གཟའ་པ་སངས་','གཟའ་སྤེན་པ་','གཟའ་ཉི་མ་','གཟའ་ཟླ་བ་']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'et',
        dows
-  from unnest(array['esmaspäev','teisipäev','kolmapäev','neljapäev','reede','laupäev','pühapäev']) as dows;
+  from unnest(array['esmaspäev','teisipäev','kolmapäev','neljapäev','reede','laupäev','pühapäev']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'fo',
        dows
-  from unnest(array['mánadagur','týsdagur','mikudagur','hósdagur','fríggjadagur','leygardagur','sunnudagur']) as dows;
+  from unnest(array['mánadagur','týsdagur','mikudagur','hósdagur','fríggjadagur','leygardagur','sunnudagur']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'fj',
        dows
-  from unnest(array['Mōniti','Tūsiti','Vukelulu','Lotulevu','Vakaraubuka','Vakarauwai','Sigatabu']) as dows;
+  from unnest(array['Mōniti','Tūsiti','Vukelulu','Lotulevu','Vakaraubuka','Vakarauwai','Sigatabu']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'fi',
        dows
-  from unnest(array['maanantai','tiistai','keskiviikko','torstai','perjantai','lauantai','sunnuntai']) as dows;
+  from unnest(array['maanantai','tiistai','keskiviikko','torstai','perjantai','lauantai','sunnuntai']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'fr',
        dows
-  from unnest(array['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche']) as dows;
+  from unnest(array['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'gl',
        dows
-  from unnest(array['luns','martes','mércores','xoves','venres','sábado','domingo']) as dows;
+  from unnest(array['luns','martes','mércores','xoves','venres','sábado','domingo']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'ka',
        dows
-  from unnest(array['ორშაბათი','სამშაბათი','ოთხშაბათი','ხუთშაბათი','პარასკევი','შაბათი','კვირა']) as dows;
+  from unnest(array['ორშაბათი','სამშაბათი','ოთხშაბათი','ხუთშაბათი','პარასკევი','შაბათი','კვირა']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'de',
        dows
-  from unnest(array['Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag','Sonntag']) as dows;
+  from unnest(array['Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag','Sonntag']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'el',
        dows
-  from unnest(array['Δευτέρα','Τρίτη','Τετάρτη','Πέμπτη','Παρασκευή','Σάββατο','Κυριακή']) as dows;
+  from unnest(array['Δευτέρα','Τρίτη','Τετάρτη','Πέμπτη','Παρασκευή','Σάββατο','Κυριακή']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'gu',
        dows
-  from unnest(array['સોમવાર','મંગળવાર','બુધવાર','ગુરુવાર','શુક્રવાર','શનિવાર','રવિવાર']) as dows;
+  from unnest(array['સોમવાર','મંગળવાર','બુધવાર','ગુરુવાર','શુક્રવાર','શનિવાર','રવિવાર']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'ht',
        dows
-  from unnest(array['lendi','madi','mèkre','dijedi','vandredi','samdi','dimanch']) as dows;
+  from unnest(array['lendi','madi','mèkre','dijedi','vandredi','samdi','dimanch']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'he',
        dows
-  from unnest(array['יום שני','יום שלישי','יום רביעי','יום חמישי','יום שישי','יום שבת','יום ראשון']) as dows;
+  from unnest(array['יום שני','יום שלישי','יום רביעי','יום חמישי','יום שישי','יום שבת','יום ראשון']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'hi',
        dows
-  from unnest(array['सोमवार','मंगलवार','बुधवार','गुरुवार','शुक्रवार','शनिवार','रविवार']) as dows;
+  from unnest(array['सोमवार','मंगलवार','बुधवार','गुरुवार','शुक्रवार','शनिवार','रविवार']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'hu',
        dows
-  from unnest(array['hétfő','kedd','szerda','csütörtök','péntek','szombat','vasárnap']) as dows;
+  from unnest(array['hétfő','kedd','szerda','csütörtök','péntek','szombat','vasárnap']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'is',
        dows
-  from unnest(array['mánudagur','þriðjudagur','miðvikudagur','fimmtudagur','föstudagur','laugardagur','sunnudagur']) as dows;
+  from unnest(array['mánudagur','þriðjudagur','miðvikudagur','fimmtudagur','föstudagur','laugardagur','sunnudagur']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'id',
        dows
-  from unnest(array['Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu']) as dows;
+  from unnest(array['Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'ga',
        dows
-  from unnest(array['Dé Luan','Dé Mairt','Dé Céadaoin','Déardaoin','Dé h-Aoine','Dé Sathairn','Dé Domhnaigh']) as dows;
+  from unnest(array['Dé Luan','Dé Mairt','Dé Céadaoin','Déardaoin','Dé h-Aoine','Dé Sathairn','Dé Domhnaigh']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'it',
        dows
-  from unnest(array['lunedì','martedì','mercoledì','giovedì','venerdì','sabato','domenica']) as dows;
+  from unnest(array['lunedì','martedì','mercoledì','giovedì','venerdì','sabato','domenica']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'ja',
        dows
-  from unnest(array['月曜日','火曜日','水曜日','木曜日','金曜日','土曜日','日曜日']) as dows;
+  from unnest(array['月曜日','火曜日','水曜日','木曜日','金曜日','土曜日','日曜日']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'kk',
        dows
-  from unnest(array['дүйсенбi','сейсенбi','сәрсенбі','бейсенбі','жұма','сенбі','жексенбi']) as dows;
+  from unnest(array['дүйсенбi','сейсенбi','сәрсенбі','бейсенбі','жұма','сенбі','жексенбi']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'ko',
        dows
-  from unnest(array['월요일','화요일','수요일','목요일','금요일','토요일','일요일']) as dows;
+  from unnest(array['월요일','화요일','수요일','목요일','금요일','토요일','일요일']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'la',
        dows
-  from unnest(array['diēs lūnae','diēs martis','diēs mercurī','diēs iovis','diēs veneris','diēs saturnī','diēs solis']) as dows;
+  from unnest(array['diēs lūnae','diēs martis','diēs mercurī','diēs iovis','diēs veneris','diēs saturnī','diēs solis']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'lv',
        dows
-  from unnest(array['pirmdiena','otrdiena','trešdiena','ceturtdiena','piektdiena','sestdiena','svētdiena']) as dows;
+  from unnest(array['pirmdiena','otrdiena','trešdiena','ceturtdiena','piektdiena','sestdiena','svētdiena']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'li',
        dows
-  from unnest(array['Maondig','Daensdig','Goonsdig','Dónderdig','Vriedig','Zaoterdig','Zóndig']) as dows;
+  from unnest(array['Maondig','Daensdig','Goonsdig','Dónderdig','Vriedig','Zaoterdig','Zóndig']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'lt',
        dows
-  from unnest(array['Pirmadienis','Antradienis','Trečiadienis','Ketvirtadienis','Penktadienis','Šeštadienis','Sekmadienis']) as dows;
+  from unnest(array['Pirmadienis','Antradienis','Trečiadienis','Ketvirtadienis','Penktadienis','Šeštadienis','Sekmadienis']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'lb',
        dows
-  from unnest(array['Méindeg','Dënschdeg','Mëttwoch','Donneschdeg','Freideg','Samschdeg','Sonndeg']) as dows;
+  from unnest(array['Méindeg','Dënschdeg','Mëttwoch','Donneschdeg','Freideg','Samschdeg','Sonndeg']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'mk',
        dows
-  from unnest(array['Понеделник','Вторник','Среда','Четврток','Петок','Сабота','Недела']) as dows;
+  from unnest(array['Понеделник','Вторник','Среда','Четврток','Петок','Сабота','Недела']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'ms',
        dows
-  from unnest(array['Isnin','Selasa','Rabu','Khamis','Jumaat','Sabtu','Ahad']) as dows;
+  from unnest(array['Isnin','Selasa','Rabu','Khamis','Jumaat','Sabtu','Ahad']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'mt',
        dows
-  from unnest(array['it-Tnejn','it-Tlieta','l-Erbgħa','il-Ħamis','il-Ġimgħa','is-Sibt','il-Ħadd']) as dows;
+  from unnest(array['it-Tnejn','it-Tlieta','l-Erbgħa','il-Ħamis','il-Ġimgħa','is-Sibt','il-Ħadd']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'gv',
        dows
-  from unnest(array['Jelhune','Jemayrt','Jecrean','Jerdein','Jeheiney','Jesarn','Jedoonee']) as dows;
+  from unnest(array['Jelhune','Jemayrt','Jecrean','Jerdein','Jeheiney','Jesarn','Jedoonee']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'mi',
        dows
-  from unnest(array['rāhine','rātū','rāapa','rāpare','rāmere','rāhoroi','rātapu']) as dows;
+  from unnest(array['rāhine','rātū','rāapa','rāpare','rāmere','rāhoroi','rātapu']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'mh',
        dows
-  from unnest(array['Jabōt','M̧ande','Juje','Wōnje','Taije','Bōraide','Jādede']) as dows;
+  from unnest(array['Jabōt','M̧ande','Juje','Wōnje','Taije','Bōraide','Jādede']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'mn',
        dows
-  from unnest(array['даваа','мягмар','лхагва','пүрэв','баасан','бямба','ням']) as dows;
+  from unnest(array['даваа','мягмар','лхагва','пүрэв','баасан','бямба','ням']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'ne',
        dows
-  from unnest(array['सोमबार','मंगलबार','बुधबार','बिहीबार','शुक्रबारbr','शनिबार','आइतबार']) as dows;
+  from unnest(array['सोमबार','मंगलबार','बुधबार','बिहीबार','शुक्रबारbr','शनिबार','आइतबार']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'nb',
        dows
-  from unnest(array['mandag','tirsdag','onsdag','torsdag','fredag','lørdag','søndag']) as dows;
+  from unnest(array['mandag','tirsdag','onsdag','torsdag','fredag','lørdag','søndag']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'nn',
        dows
-  from unnest(array['måndag','tysdag','onsdag','torsdag','fredag','laurdag','sundag']) as dows;
+  from unnest(array['måndag','tysdag','onsdag','torsdag','fredag','laurdag','sundag']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'no',
        dows
-  from unnest(array['måndag','tysdag','onsdag','torsdag','fredag','laurdag','sundag']) as dows;
+  from unnest(array['måndag','tysdag','onsdag','torsdag','fredag','laurdag','sundag']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'oc',
        dows
-  from unnest(array['diluns','dimars','dimècres','dijóus','divendres','dissabte','dimenge']) as dows;
+  from unnest(array['diluns','dimars','dimècres','dijóus','divendres','dissabte','dimenge']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'fa',
        dows
-  from unnest(array['دوشنبه','سهشنبه','چهارشنبه','پنجشنبه','جمعه','شنبه','یکشنبه']) as dows;
+  from unnest(array['دوشنبه','سهشنبه','چهارشنبه','پنجشنبه','جمعه','شنبه','یکشنبه']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'pl',
        dows
-  from unnest(array['poniedziałek','wtorek','środa','czwartek','piątek','sobota','niedziela']) as dows;
+  from unnest(array['poniedziałek','wtorek','środa','czwartek','piątek','sobota','niedziela']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'pt',
        dows
-  from unnest(array['segunda-feira','terça-feira','quarta-feira','quinta-feira','sexta-feira','sábado','domingo']) as dows;
+  from unnest(array['segunda-feira','terça-feira','quarta-feira','quinta-feira','sexta-feira','sábado','domingo']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'qu',
        dows
-  from unnest(array['Killachau','Atipachau','Qoyllurchau','Illapachau','Ch''askachau','K''uychichau','Intichu']) as dows;
+  from unnest(array['Killachau','Atipachau','Qoyllurchau','Illapachau','Ch''askachau','K''uychichau','Intichu']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'rm',
        dows
-  from unnest(array['luni','marţi','miercuri','joi','vineri','sîmbătă','duminică']) as dows;
+  from unnest(array['luni','marţi','miercuri','joi','vineri','sîmbătă','duminică']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'ru',
        dows
-  from unnest(array['понедельник','вторник','среда','четверг','пятница','суббота','воскресенье']) as dows;
+  from unnest(array['понедельник','вторник','среда','четверг','пятница','суббота','воскресенье']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'sm',
        dows
-  from unnest(array['Aso Gafua','Aso Lua','Aso Lulu','Aso Tofi','Aso Faraile','Aso To''ona''i','Aso Sā']) as dows;
+  from unnest(array['Aso Gafua','Aso Lua','Aso Lulu','Aso Tofi','Aso Faraile','Aso To''ona''i','Aso Sā']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'sa',
        dows
-  from unnest(array['इन्दुवासरम्','भौमवासरम्','सौम्यवासरम्','गुरूवासरम','भ्रगुवासरम्','स्थिरवासरम्','भानुवासरम्']) as dows;
+  from unnest(array['इन्दुवासरम्','भौमवासरम्','सौम्यवासरम्','गुरूवासरम','भ्रगुवासरम्','स्थिरवासरम्','भानुवासरम्']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'sc',
        dows
-  from unnest(array['lunis','martis','mércuris','giòvia','chenábura','sáppadu','dumíniga']) as dows;
+  from unnest(array['lunis','martis','mércuris','giòvia','chenábura','sáppadu','dumíniga']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'gd',
        dows
-  from unnest(array['Diluain','Dimàirt','Diciadain','Diardaoin','Dihaoine','Disatharna','Didòmhnaich']) as dows;
+  from unnest(array['Diluain','Dimàirt','Diciadain','Diardaoin','Dihaoine','Disatharna','Didòmhnaich']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'sr',
        dows
-  from unnest(array['Понедељак','Уторак','Среда','Четвртак','Петак','Субота','Недеља']) as dows;
+  from unnest(array['Понедељак','Уторак','Среда','Четвртак','Петак','Субота','Недеља']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'st',
        dows
-  from unnest(array['Mantaha','Labobedi','Laboraro','Labone','Labohlano','Moqebelo','Sontaha']) as dows;
+  from unnest(array['Mantaha','Labobedi','Laboraro','Labone','Labohlano','Moqebelo','Sontaha']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'sk',
        dows
-  from unnest(array['pondelok','utorok','streda','štvrtok','piatok','sobota','nedel''a']) as dows;
+  from unnest(array['pondelok','utorok','streda','štvrtok','piatok','sobota','nedel''a']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'sl',
        dows
-  from unnest(array['Ponedeljek','Torek','Sreda','Četrtek','Petek','Sobota','Nedelja']) as dows;
+  from unnest(array['Ponedeljek','Torek','Sreda','Četrtek','Petek','Sobota','Nedelja']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'es',
        dows
-  from unnest(array['lunes','martes','miércoles','jueves','viernes','sábado','domingo']) as dows;
+  from unnest(array['lunes','martes','miércoles','jueves','viernes','sábado','domingo']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'sw',
        dows
-  from unnest(array['jumatatu','jumanne','jumatano','alhamisi','ijumaa','jumamosi','jumapili']) as dows;
+  from unnest(array['jumatatu','jumanne','jumatano','alhamisi','ijumaa','jumamosi','jumapili']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'sv',
        dows
-  from unnest(array['måndag','tisdag','onsdag','torsdag','fredag','lördag','söndag']) as dows;
+  from unnest(array['måndag','tisdag','onsdag','torsdag','fredag','lördag','söndag']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'tl',
        dows
-  from unnest(array['Lunes','Martes','Miyerkules','Huwebes','Biyernes','Sabado','Linggo']) as dows;
+  from unnest(array['Lunes','Martes','Miyerkules','Huwebes','Biyernes','Sabado','Linggo']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'ty',
        dows
-  from unnest(array['Monirē','Mahana Piti','Mahana Toru','Mahana Maha','Mahana Pae','Mahana Mā''a','Tāpati']) as dows;
+  from unnest(array['Monirē','Mahana Piti','Mahana Toru','Mahana Maha','Mahana Pae','Mahana Mā''a','Tāpati']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'ta',
        dows
-  from unnest(array['திங்கள்','செவ்வாய்','புதன்','வியாழன','வெள்ளி','சனி','ஞாயிறு']) as dows;
+  from unnest(array['திங்கள்','செவ்வாய்','புதன்','வியாழன','வெள்ளி','சனி','ஞாயிறு']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'th',
        dows
-  from unnest(array['วันจันทร์','วันอังคาร','วันพุธ','วันพฦหัสบดี','วันศุกร์','วันเสาร์','วันอาทิตย์']) as dows;
+  from unnest(array['วันจันทร์','วันอังคาร','วันพุธ','วันพฦหัสบดี','วันศุกร์','วันเสาร์','วันอาทิตย์']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'bo',
        dows
-  from unnest(array['གཟའ་ཟླ་བ་','གཟའ་མིག་དམར་','གཟའ་ལྷག་པ་','གཟའ་ཕུར་བུ་','གཟའ་པ་སངས་','གཟའ་སྤེན་པ་','གཟའ་ཉི་མ་']) as dows;
+  from unnest(array['གཟའ་ཟླ་བ་','གཟའ་མིག་དམར་','གཟའ་ལྷག་པ་','གཟའ་ཕུར་བུ་','གཟའ་པ་སངས་','གཟའ་སྤེན་པ་','གཟའ་ཉི་མ་']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'ts',
        dows
-  from unnest(array['Musumbhunuku','Ravumbirhi','Ravunharhu','Ravumune','Ravuntlhanu','Mugqivela','Sonto']) as dows;
+  from unnest(array['Musumbhunuku','Ravumbirhi','Ravunharhu','Ravumune','Ravuntlhanu','Mugqivela','Sonto']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'tr',
        dows
-  from unnest(array['Pazartesi','Salı','Çarşamba','Perşembe','Cuma','Cumartesi','Pazar']) as dows;
+  from unnest(array['Pazartesi','Salı','Çarşamba','Perşembe','Cuma','Cumartesi','Pazar']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'uk',
        dows
-  from unnest(array['понеділок','вівторок','середа','четвер','п''ятниця','субота','неділя']) as dows;
+  from unnest(array['понеділок','вівторок','середа','четвер','п''ятниця','субота','неділя']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'ur',
        dows
-  from unnest(array['پير','منگل','بدھ','جمعرات','جمعہ','ہفتہ','اتوار']) as dows;
+  from unnest(array['پير','منگل','بدھ','جمعرات','جمعہ','ہفتہ','اتوار']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'uz',
        dows
-  from unnest(array['Dushanba','Seshanba','Chorshanba','Payshanba','Juma','Shanba','Yakshanba']) as dows;
+  from unnest(array['Dushanba','Seshanba','Chorshanba','Payshanba','Juma','Shanba','Yakshanba']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        've',
        dows
-  from unnest(array['Musumbuluwo','Ḽavhuvhili','Ḽavhuraru','Ḽavhuṋa','Ḽavhutanu','Mugivhela','Swondaha']) as dows;
+  from unnest(array['Musumbuluwo','Ḽavhuvhili','Ḽavhuraru','Ḽavhuṋa','Ḽavhutanu','Mugivhela','Swondaha']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'wa',
        dows
-  from unnest(array['londi','mårdi','mierkidi','djudi','vénrdi','semdi','dimenge']) as dows;
+  from unnest(array['londi','mårdi','mierkidi','djudi','vénrdi','semdi','dimenge']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'cy',
        dows
-  from unnest(array['dydd Llun','dydd Mawrth','dydd Mercher','dydd Iau','dydd Gwener','dydd Sadwrn','dydd Sul']) as dows;
+  from unnest(array['dydd Llun','dydd Mawrth','dydd Mercher','dydd Iau','dydd Gwener','dydd Sadwrn','dydd Sul']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'vi',
        dows
-  from unnest(array['thứ hai','thứ ba','thứ tư','thứ năm','thứ sáu','thứ bảy','chủ nhật']) as dows;
+  from unnest(array['thứ hai','thứ ba','thứ tư','thứ năm','thứ sáu','thứ bảy','chủ nhật']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'yi',
        dows
-  from unnest(array['מאָנטיק','דינסטיק','מיטװאָך','דאָנערשטיק','פֿרײַטיק','שבת','זונטיק']) as dows;
+  from unnest(array['מאָנטיק','דינסטיק','מיטװאָך','דאָנערשטיק','פֿרײַטיק','שבת','זונטיק']) as dows
+  order by 1;
 
 insert into i18n_translation (identifier, namespace, language_id, text)
 select 'dow.'||to_char(case row_number() over () when 7 then 1 else row_number() over () + 1 end, 'FM9'),
        'PUBLIC',
        'zu',
        dows
-  from unnest(array['uMombuluko','uLwesibili','uLwesithathu','uLwesine','uLewishlanu','uMgqibelo','iSonto']) as dows;
+  from unnest(array['uMombuluko','uLwesibili','uLwesithathu','uLwesine','uLewishlanu','uMgqibelo','iSonto']) as dows
+  order by 1;
 
