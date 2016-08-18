@@ -46,8 +46,6 @@ $body$;
 grant execute on function timestamp_from_id(numeric) to public;
 
 create domain general_id
-  as numeric(24)
-  default make_id()
-  not null;
+  as numeric(24);
 
 grant usage on domain general_id to public;
