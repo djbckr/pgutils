@@ -5,12 +5,12 @@ This utility makes a unique id suitable for a primary key.
 What's so different about this?
 1) It uses a numeric(24) type instead of an integer. This provides essentially unlimited values, and uses slightly less space than a UUID.
 2) The ID can be used to figure out when the ID was generated.
-3) There is essentially no possible collision possible. Over 10,000 ID's would have to be generated every microsecond.
+3) There is essentially no collision possible. Over 10,000 ID's would have to be generated every microsecond.
 
 For each new ID to be generated, the publicly accessible make_id() function should be called.
 To see the local time of when the ID was generated, use the timestamp_from_id() function.
 
-A domain, rwutl.general_id, can be used as a data-type in tables that use this ID.
+A domain, utl.general_id, can be used as a data-type in tables that use this ID.
 
 ** Known Bugs: This has a y10k bug.
 
