@@ -13,7 +13,7 @@ as $body$
       and language_id = iLang;
 $body$;
 
-grant execute on get(text, text, text) to public;
+grant execute on function get(text, text, text) to public;
 
 create or replace function get
   ( iID          in text )
@@ -28,3 +28,4 @@ as $body$
       and language_id = cfg.getText('default.language', 'en');
 $body$;
 
+grant execute on function get(text) to public;

@@ -14,6 +14,8 @@ create table country (
   constraint uq_country_native_name unique (native_name)
 );
 
+grant references on country to public;
+
 create or replace view countries as
 select * from country;
 
@@ -29,6 +31,8 @@ create table currency (
   constraint pk_currency primary key (currency_id)
 );
 
+grant references on currency to public;
+
 create or replace view currencies as
 select * from currency;
 
@@ -41,6 +45,8 @@ create table language (
   native_name      text,
   constraint pk_language primary key (language_id)
 );
+
+grant references on language to public;
 
 create or replace view languages as
 select * from language;
@@ -100,3 +106,4 @@ select * from i18n_translation;
 grant select on i18n_translations to public;
 
 \ir i18n_data.sql
+\ir functions.sql
